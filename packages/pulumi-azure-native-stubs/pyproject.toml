@@ -1,6 +1,6 @@
 [project]
 name = "pulumi-azure-native-stubs"
-version = "3.16.0.20260408"
+version = "3.16.0.20261016"
 description = "Type stubs for pulumi-azure-native Python SDK"
 license = "MIT"
 classifiers = [
@@ -26,7 +26,7 @@ requires = ["uv_build>=0.11.0,<0.12.0"]
 build-backend = "uv_build"
 
 [tool.uv.build-backend]
-module-name = "pulumi_azure_native"
+module-name = "pulumi_azure_native-stubs"
 module-root = "src"
 
 [[tool.uv.index]]

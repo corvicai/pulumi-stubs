@@ -13,10 +13,11 @@ def generate_stubs():
     ]
     for package in packages:
         package_name = package.replace("-", "_")
-        shutil.rmtree(
-            f"packages/{package}-stubs/src/{package_name}",
-            ignore_errors=True,
-        )
+        # PEP 561 stub-only package: `<module>-stubs/` holding only `.pyi`
+        # files, so it never shares a directory with the runtime package.
+        stubs_dir = f"packages/{package}-stubs/src/{package_name}-stubs"
+        shutil.rmtree(stubs_dir, ignore_errors=True)
+        os.makedirs(os.path.dirname(stubs_dir), exist_ok=True)
         _ = subprocess.run(
             [
                 "pyright",
@@ -27,16 +28,9 @@ def generate_stubs():
         )
         _ = subprocess.run(
             [
-                "touch",
-                f"typings/{package_name}/__init__.py",
-            ],
-            check=True,
-        )
-        _ = subprocess.run(
-            [
                 "mv",
                 f"typings/{package_name}",
-                f"packages/{package}-stubs/src/{package_name}",
+                stubs_dir,
             ],
             check=True,
         )
